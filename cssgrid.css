@@ -1,0 +1,63 @@
+.container {
+    background-color: #eee;
+    width: 400px;
+    margin: 30px auto;
+
+    display: grid;
+     /* grid-template-rows: 150px 150px;   ou grid-template-rows : repeat(2, 150px); */
+    /* grid-template-columns: 150px 150px 150px; ou grid-template-columns : repeat(3, 150px);  */
+
+    grid-template-rows: repeat(2, 150px);
+    grid-template-columns: 1fr 2fr 1fr;
+
+    /* grid-row-gap: 30px; */
+    /* grid-column-gap: 30px; */
+    /* grid-gap: 30px; */
+
+    /* On peut nommer les classes et les rangés
+    grid-template-rows: [header-repeat]150px[header-end] 150px;
+     */
+    grid-template-columns: 1fr 2fr 1fr;
+
+
+}
+
+.items {
+    padding: 20px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.item1 {
+
+    /* grid-row-start: 2;
+    grid-row-end: 3; 
+    Ces deux lignes peuvent s'écrire en une seule ligne : 
+    grid-row : 2 / 3    */
+
+    /* grid-column-start: 2;
+    grid-column-end: 3; 
+    Ces deux lignes peuvent s'écrire en une seule ligne : 
+    grid-column : 2 / 3  */
+
+    /* grid-row: 1 / 2;
+    grid-column: 1 / 4; */
+
+    background-color: pink;
+}
+
+.item2 {
+    background-color:teal;
+}
+.item3 {
+    background-color: yellowgreen;
+}
+.item4 {
+    background-color: crimson;
+}
+.item5 {
+    background-color: goldenrod;
+}
+.item6 {
+    background-color:indianred;
+}

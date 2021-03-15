@@ -1,0 +1,66 @@
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 800px;
+    height: 300px;
+    background-color: midnightblue;
+    display: flex;
+  /*   justify-content: center; 
+    align-items: center;
+    flex-direction: column; */ 
+}
+
+.item {
+    height: 150px;
+    width: 150px;
+}
+
+.item:nth-child(1) {
+    background: lightblue;
+}
+
+.item:nth-child(2) {
+    background: lightgreen;
+    flex-shrink: 1;
+}
+
+.item:nth-child(3) {
+    background: salmon;
+}
+
+            /* FLEXBOX */
+
+/* Les propriétés du container */
+
+/* display : flex;
+
+    justify-content:{center, flex-start, flex-end, space-evenly, space-between, space-around}; 
+    La propriété justify-content est pour positionner les éléments sur l'axe x c-à-d horizontalement.
+
+
+    align-item : {center, stretch,fle-start, flex-end} 
+    La propriété align-item permet de positionner les éléments sur l'axe y c-à-d verticalement .
+
+
+    flex-direction: {row, column, row-reverse, column-reverse}
+
+    flex-wrap : wrap 
+    La propriété flex-wrap permet aux items de passer à la ligne au cas où ils n'arrivent tous pas 
+    à rester sur la même ligne(dans le container) lorsque par exemple on retrécit la taille de l'écran
+
+
+     Les propriétés liées aux items 
+
+    flex-shrink{0,1,2};
+    Cette propriété permet aux éléments de se rétrécir quand il n'y a plus de place dans le container
+
+    flex-grow : {0, 1}
+    Cette propriété permet aux éléments de se partager l'espace disponible et de le remplir automatiquement.
+
+    flex : 0 1 150px {grow,shrink,basis=width}
+*/
