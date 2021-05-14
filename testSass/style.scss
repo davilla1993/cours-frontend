@@ -22,7 +22,7 @@ $couleur-txt-base: crimson;
             }
         }
     }
-} */
+}
 
 // Ecrire du code réutilisable
 @mixin flexMid {
@@ -51,7 +51,100 @@ body {
     background: green;
 }
 
-// Les fontions
+// Les fonctions
 @function add($a, $b) {
     @return $a + $b;
+}  */
+
+// L'héritage en css
+/* .txt {
+    font-size: 40px;
+    font-family: sans-serif;
 }
+
+.txt2 {
+    @extend .txt;
+    color: #000;
+    letter-spacing: -5px;
+} */
+
+// On peut passer des paramètres au mixin
+/* @mixin ecriture($couleur, $valeur) {
+    {$couleur} : $valeur;
+}
+
+.txt {
+    font-size: 40px;
+    font-family: sans-serif;
+    @include ecriture(background, violet);
+} */
+
+// On peut ajouter des param par défaut au mixin
+/* 
+@mixin position($x:50%, $y:50%) {
+    position: absolute;
+    left: $x;
+    top: $y;
+    transform: translate(-$x, -$y);
+}  */
+
+//  mixin avec condition
+/* @mixin position($fond, $x: 50%, $y: 50%) {
+    position: absolute;
+    left: $x;
+    top: $y;
+    transform: translate(-$x, -$y);
+    background: $fond;
+
+    @if $fond != salmon {
+        border-radius: 50%;
+    }
+}
+.box {
+    @include position(rgb(114, 128, 250));
+    width: 250px;
+    height: 250px;
+}
+ */
+
+//  Boucle for
+/* @for $i from 1 through 6 {
+
+    .item#{$i}{
+        font-size: 30px + $i * 10;
+    }
+} */
+
+// Warn, error et debug
+
+// warn affiche le message mais ne stope pas le code,
+// error affihe le message et arrête le code,
+// debug affiche les étapes d'exéution du code
+/* @for $i from 1 through 6 {
+
+    @if $i > 1 {
+        @warn "Limite dépassée";
+    }
+    .item#{$i}{
+        font-size: 30px + $i * 10;
+    }
+}
+
+@for $i from 1 through 6 {
+
+    @if $i > 1 {
+        @error "Limite dépassée";
+    }
+    .item#{$i}{
+        font-size: 30px + $i * 10;
+    }   
+}
+
+@for $i from 1 through 6 {
+
+    .item#{$i}{
+        font-size: 30px + $i * 10;
+        @debug "aleur de font-size : #{3°px + $i * 10}"
+    }   
+}
+ */

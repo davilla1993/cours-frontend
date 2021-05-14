@@ -1,0 +1,26 @@
+CONTAINER : display 
+
+		gird-template-columns; grid-template-rows; grid-template-areas; grid-template
+		jutify-content ; align-content ; place-content ; justify-items ; align-items ; place-items 
+		grid-column-gap ; grid-row-gap ; (grid-)gap
+		grid-auto-columns ; grid-auto-rows ; grid-auto-flow
+
+
+		Les attributs  min-content ; max-content
+	
+	Exemple : 
+		.container {
+
+			grid-template-columns : min-content 1fr 1fr ; 
+
+			}  
+
+
+
+ITEM   :       grid-column ; grid-row ; grid-area ; 
+	       grid-column-start ; grid-column-end ; grid-row-start ; grid-row-end
+	       justify-self ; align-self ; place-self
+		
+
+      
+		

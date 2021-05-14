@@ -1,48 +1,17 @@
-@charset "UTF-8";
-/* // Création d'une variable
-$couleur-txt-base: crimson;
+/* Error: Undefined variable.
+ *     ,
+ * 113 |     .item#{$i}{
+ *     |            ^^
+ *     '
+ *   style.scss 113:12  root stylesheet */
 
-// Utilisation de la variable créée
-.item {
-    color: $couleur-txt-base;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a     \2577 \a 113 \2502      .item#{$i}{\d\a     \2502             ^^\a     \2575 \a   style.scss 113:12  root stylesheet";
 }
-
-// Le Nesting:imbrication pour les éléments de même parent 
-.container {
-    background: #000;
-
-    ul {
-        font-size: 40px;
-
-        .item {
-            background: lightblue;
-
-            &:hover {
-                color : violet;
-            }
-        }
-    }
-} */
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 300px;
-  background: salmon;
-}
-
-.box2 {
-  width: 100px;
-  height: 100px;
-  background: green;
-}
-
-/*# sourceMappingURL=style.css.map */
